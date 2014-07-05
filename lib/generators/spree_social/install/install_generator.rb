@@ -4,7 +4,7 @@ module SpreeSocial
       class_option :auto_run_migrations, :type => :boolean, :default => false
 
       def add_stylesheets
-        inject_into_file 'vendor/assets/stylesheets/spree/frontend/all.css', " *= require spree/frontend/spree_social\n", before: /\*\//, verbose: true
+        inject_into_file 'app/assets/stylesheets/store/all.css', " *= require spree/frontend/spree_social\n", before: /\*\//, verbose: true
       end
 
       def add_migrations
