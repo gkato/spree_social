@@ -1,4 +1,5 @@
 /*
- *= require spree/frontend
+ * require store/frontend
+ *= require store/spree_frontend
  *= require_tree .
 */
